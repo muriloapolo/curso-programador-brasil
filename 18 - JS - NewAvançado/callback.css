@@ -1,0 +1,45 @@
+:root{
+    --corBackDark: rgba(11, 51, 226, 0.815);
+    --corTextoWhite: white;
+    --corBackWhite: #fff;
+    --corTextoDark: #000;
+    
+}
+ *{
+    margin: 5px;
+    padding: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+
+}
+.bodyBlack{
+    background-color: var(--corBackDark);
+    color: var(--corBackWhite);
+}
+.bodyWhite{
+    background-color: var(--corBackWhite);
+    color: var(--corTextoDark);
+}
+h1{
+    text-align: center;
+}
+
+.btnFundo{
+    width: 100%;
+    height: 200px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: solid;
+}
+
+
+#activeFundoCor{
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    box-sizing: border-box;
+
+}

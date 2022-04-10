@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JavaScript - Aulas PROGBR</title>
+    <meta name="description" content="JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./estilo.css">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div class="container">
+        <h1>JavaScript</h1>
+        <div id="teste"></div>
+        <p>
+            Variáveis armazenam dados, variáveis recebem variáveis.
+        </p>
+        <p>Nomes de variáveis:</p>
+        <p>
+            Letras, números, não inicia com letra maiúscula de preferência. Variáveis podem conter underline, podem
+            começar
+            conter $ mas não é recomendado, pois o Jquery utiliza este símbolo.
+        </p>
+        <p>
+            No JS letra maiúscula e minuculas são diferentes onde 'a' != 'A'
+        </p>
+        <p>Algumas dicas para uso de nomes para variáveis: camelCase ou PascalCase que também é chamada de
+            UpperCamelCase,
+            ou interligadas_por_underline </p>
+        <h2>Agora Entre no Console <code>CTRL + SHIFT + I</code> ou <code>F12</code></h2>
+        <a href="javascript:void(document.form.submit())">
+            Clique aqui para enviar</a>
+        <h1>ARRAYS</h1>
+        <ul>
+            <li>Os arrays são como prateleiras que recebem diferentes elementes. </li>
+            <li>Os arrays começam com índice Zero, caso não sejam criados índices.</li>
+            <li>O array tem em seu tamanho igual a quantidade de itens menos 1.</li>
+            <li>Arrays podem ter seus itens acessados por um índex</li>
+            <li>Podem ser lidos com for e while</li>
+            <li>Criamos um array com o uso de <code>let nomeVariavel = new Array()</code> ou <code>let nomeVariavel = []
+            </li>
+            <li>Arrays podem ser varridos com In e Of, retornando algumas singularidades.</li>
+            <li>veja arquivo Js linha 282</li>
+        </ul>
+
+        <h1>Funções</h1>
+        <p>A partir da linha 296</p>
+
+        <p>Uma função é um apelido para um bloco de comando. Isto serve para agrupar comandos e deve ser chamado quando
+            for chamada.
+        </p>
+        <code>
+
+            function nomeDaFuncao(n1, n2){
+            var nota1 = n1;
+            var nota2 = n2;
+            var media = (nota1 + nota2)/ 2;
+            console.log(media);
+            }
+
+            nomeDaFuncao(2.4)
+            -------------------------------------
+
+            function media(n1, n2) {
+            //var nota1 = n1;
+            //var nota2 = n2;
+            var teste = (n1 + n2) / 2;
+            return teste;
+
+            }
+            var resultado1 = media(6, 5);
+            var resultado2 = media(9, 4);
+            console.log(resultado1 + ' e ' + resultado2);
+
+
+
+
+
+
+        </code>
+
+
+        <div id="caixaRegistro">
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <!--Fim do container-->
+    </div>
+
+    <script src="./script.js" async defer></script>
+</body>
+
+</html>

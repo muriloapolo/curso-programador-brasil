@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Luta de MonstroMon</title>
+    <meta name="description" content="Batalha virtual de Reais Monstromons" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+
+    <button id="iniciaLuta" onclick="iniciarLuta()">Iniciar Luta</button>
+    <br />
+    <br />
+    <button id="mon1" onclick="geraAtkA()">Ataque MonstroMon 1</button> <br />
+    <button id="mon2" onclick="geraAtkB()">Ataque MonstroMon 2</button><br />
+    <button onclick="lutar()">Lutar</button><br />
+    <button onclick="window.localStorage.clear()">Limpar</button>
+    <main>
+      <div>
+        <div>
+          <input
+            type="range"
+            name="life1"
+            id="life1"
+            value="100"
+            style="color: red"
+          />
+        </div>
+        <div>
+          <input
+            type="range"
+            name="life2"
+            id="life2"
+            value="100"
+            style="resize: color; red; background-color: red"
+          />
+        </div>
+        <div>
+          <input
+            type="size"
+            name="life3"
+            id="life2"
+            value=""
+            style="background-color: red; display: inline; border: none"
+          />
+        </div>
+      </div>
+    </main>
+    <script src="./js/script.js" async defer></script>
+  </body>
+</html>

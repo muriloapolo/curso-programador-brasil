@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+h1::before{
+    content: 'Murilo Apolonio ';
+    color: blue;
+}
+p::selection{
+    content: '';
+    background-color: yellow;
+    color: orangered;
+    
+}
+p::first-letter{
+    color: blue;
+    font-size: 50px;
+    font-weight: 900;
+}
+.quadro::before{
+    /* */
+    content: '';
+    display: inline-block;
+    background-image: url(./face.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    box-shadow: 3px 3px 10px rgb(129, 129, 21);
+}
+/* O before substitui o first letter*/
+/* p::before{
+    content: '';
+    margin-left: 50px;
+    padding-left: 50px;
+    box-shadow: 3px 3px 10px rgb(155, 155, 98);
+  
+} */
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+}
+.quadro{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    height: 300px;
+    border: 1px solid rgba(207, 79, 79, 0.185);
+    box-shadow: 0px 0px 20px rgba(117, 7, 7, 0.253);
+    padding: 15px;
+    box-sizing: border-box;
+}

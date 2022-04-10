@@ -1,0 +1,122 @@
+ *{
+    margin: 0;
+    padding: 0;
+    background-color: red;   
+}
+/*
+#container{
+    width: 100%; 
+    background-color: blue;
+}
+#primeira {
+    display: inline-block;
+    width: calc(100% - 304px);
+    height: 300px;
+    background-color: yellow;
+}
+#segunda{
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    background-color: green;
+  
+} */
+
+
+/*primeira*/
+/* #primeira{
+    width: 4500px;
+    background-color: blueviolet;
+    transform: skew(-45deg, -8deg);
+} */
+
+/* -----Animações em CSS-------*/
+
+
+.container{
+width: 100%;
+height: 800px;
+background-color: blueviolet;
+display: grid;
+grid-template-columns: auto auto;
+grid-template-rows:1fr;
+justify-items: center;
+align-items: center;
+justify-content: center;
+
+
+
+}
+/* @keyframes teste {
+    0%{width: 200px; background-color: transparent;}
+    25%{background-color: coral;}
+ 50%{ }
+ 100%{background-color: brown; width: 250px; height: 250px;}  
+} */
+
+/* .quadro{
+    box-sizing: border-box;
+    width: 100%;
+     
+    animation: teste 1s ease-in infinite alternate-reverse forwards;
+    
+ 
+   /* animation: name duration timing-function delay iteration-count direction fill-mode;
+
+}  
+
+*/
+/* 
+.quadro1 {
+    width: 200px;
+    height: 400px;
+    background-color: azure;
+    border-top-left-radius:250px;
+    border-top-right-radius:180px;
+    border-bottom-left-radius:400px;
+    
+    
+}
+.quadro2 {
+    width: 200px;
+    height: 400px;
+    background-color: red;
+    border-top-right-radius:250px;
+    border-top-left-radius:180px;
+    border-bottom-right-radius: 400px;
+} */
+/* .quadro3 {
+    background-color: green;
+
+}
+.quadro4 {
+    background-color: gray;
+
+}
+.quadro5 {
+    background-color: orange;
+
+}
+.quadro6 {
+    background-color: rosybrown;
+
+} */
+
+/*---Transições----*/
+.btn{
+  display: inline-block;
+  padding: 20px;
+  background: #ccc;
+  color: #fff;
+  font-size: 30px;
+  /* transition-property: background-color, padding;
+  transition-duration: 500ms, 0.50s;
+  transition-delay: 100ms;
+  transition-timing-function: ease-in-out; */
+  transition: background-color 500ms ease, padding 800ms ease-in-out;
+}
+.btn:hover{
+    background-color: cadetblue;
+    padding-left: 30px;
+    padding-right: 30px;
+}

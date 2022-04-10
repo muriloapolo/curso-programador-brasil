@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rifa Do Curso</title>
+  </head>
+  <body>
+    <h1 id="resultado">----RESULTADO----</h1>
+    <button id="sorteio">Sortear</button>
+
+    <script>
+      let pessoas_rifa = [
+        "Murilo",
+        "Andreia",
+        "Mariana",
+        "Antonio",
+        "Ygor",
+        "Bruna",
+        "Cecilia",
+      ];
+      console.log(pessoas_rifa.length);
+      //Arrendondar para cima, sempre dará o numero referente ao correspondente ao valor estipulado máximo
+
+      let btn = document.getElementById("sorteio");
+      //   let gera = setInterval(sortearRifa, 1000);
+
+      btn.addEventListener("click", sortearRifa);
+
+      function sortearRifa() {
+        let resultado = Math.floor(Math.random() * pessoas_rifa.length);
+        console.log(resultado);
+        let display = document.getElementById("resultado");
+        display.innerText = "-----" + pessoas_rifa[resultado] + "-----";
+        if (display.innerText == "undefined") {
+          clearInterval(gera);
+        }
+      }
+    </script>
+  </body>
+</html>

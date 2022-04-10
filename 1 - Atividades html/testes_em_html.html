@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividades Testes html Programdor-BR</title>
+</head>
+
+<body>
+    <!-- //Formulário com Select    -->
+    <h2>Formulário com Select</h2>
+    <form method="get" action="">
+        <select size="6" multiple>
+            <option value="none" selected>-----Selecione algum valor-----</option>
+            <option value="1">Opção 1</option>
+            <option value="2">Opção 2</option>
+            <option value="3">Opção 3</option>
+        </select>
+    </form>
+
+
+    <!-- //Formulário com  campo de envio de contato -->
+    <h2>Formulario com Text-Area</h2>
+    <form method="GET" action="">
+        <input type="text" name="assunto"> <br>
+        <textarea name="mensagem" id="">
+
+        </textarea> <br>
+        <input type="submit">
+
+    </form>
+
+    <!--
+        //Can In Use
+        Serve para descobrir se o navegador do usuário é capaz de executar determinado tipo de tag.
+    
+-->
+    <h2>Input com Cor</h2>
+
+    <!--Outros Inputs-->
+
+    <form method="GET" action="">
+        <input type="color" name="" id=""> <br>
+        <input type="submit" value="submit">
+    </form>
+    <h2>Input Com Data</h2>
+    <form method="get">
+        <input type="date" name="data" id="data" min="2021-11-20" max="2021-11-22"> <br>
+        <input type="datetime-local" name="" id=""> <br>
+        <input type="file" name="arquivo" id=""> <br>
+        <!--necessita de method POST-->
+        <input type="number" name="numero" id="" min="0" max="5000"> <br>
+
+        <input type="range" name="intervalo" id="" value='0' min="0" max="10"> <br>
+        <input type="tel" name="telefone" id=""> <br>
+        <!--Funciona para Numeros no telefone-->
+        <label for="email"> email<input type="email" name="email" id=""> <br></label>
+        <input type="submit" value="submit"> <br>
+    </form>
+</body>
+
+</html>

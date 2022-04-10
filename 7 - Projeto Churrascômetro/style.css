@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.appChurras {
+    box-sizing: border-box;
+    max-width: 300px;
+    margin: auto;
+    background-color: aqua;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+input {
+    box-sizing: border-box;
+    width: 100%;
+    display: block;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+
+    padding: 10px;
+    border-radius: 10px;
+    border-color: antiquewhite;
+    font-weight: 800;
+
+}
