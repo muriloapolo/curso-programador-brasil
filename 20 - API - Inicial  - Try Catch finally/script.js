@@ -1,4 +1,3 @@
-
 let url = "https://economia.awesomeapi.com.br/json/last/USD-BRL";
 
 function converter() {
@@ -22,39 +21,6 @@ function converter() {
     })
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* Tratamento de ERROS - Try Catch throw */
