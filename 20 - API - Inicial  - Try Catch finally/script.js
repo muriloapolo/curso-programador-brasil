@@ -1,25 +1,60 @@
 
 let url = "https://economia.awesomeapi.com.br/json/last/USD-BRL";
 
-
-
-
-function converter(){
+function converter() {
     let input = document.getElementById('valor');
     let valor = input.value;
-    fetch(url)
-        .then((res)=>{
-            return res.json();
-        })
-        .then((data)=>{
-            let rate = data.USDBRL.ask;
-            let calculo = document.getElementById('resultado');
-            calculo.innerHTML = `$:${valor}, equivalem a aproximadamente R$:${Math.floor(rate * valor)}`;
-        })
-        .catch((err)=>{
-            console.log(err.create_date)
-        })
+    if(valor){
+        valor = valor.replace(/,/,'.')
+    } 
+
+    fetch(url).then((res) => {
+        return res.json()
+    }).then((data) => {
+        let rate = data.USD.ask;
+        let calculo = document.getElementById('resultado');       
+        let cambio = Math.floor(rate * valor)        
+        calculo.innerHTML = `$:${valor} dólare(s) equivalem a aproximadamente R$:${cambio} real(is)`;
+
+    }).catch((err) => {
+        
+        console.log(err)
+    })
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Tratamento de ERROS - Try Catch throw */
