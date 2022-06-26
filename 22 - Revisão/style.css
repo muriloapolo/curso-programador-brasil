@@ -1,0 +1,12 @@
+.cat{
+    width: 250px;
+    height: 250px;
+    border: 1px solid;
+    background-color: red;
+}
+.dog{
+    width: 250px;
+    height: 250px;
+    border: 1px solid;
+    background-color: blue;
+}
